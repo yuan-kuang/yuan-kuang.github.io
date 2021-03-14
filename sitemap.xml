@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2021/03/11/MySQL/</loc>
+    
+    <lastmod>2021-03-14</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2020/07/01/creat-react-app/</loc>
     
     <lastmod>2021-03-14</lastmod>
@@ -143,13 +150,6 @@
   
   <url>
     <loc>http://example.com/2021/03/11/%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/</loc>
-    
-    <lastmod>2021-03-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2021/03/11/MySQL/</loc>
     
     <lastmod>2021-03-11</lastmod>
     
