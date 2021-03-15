@@ -2,7 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2020/05/05/Uniapp%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
+    <loc>http://example.com/2020/01/07/AJAX/</loc>
+    
+    <lastmod>2021-03-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2020/01/30/JavaScript%E2%80%94%E2%80%94%E9%A1%BA%E5%BA%8F%E8%A1%A8%E3%80%81%E9%93%BE%E8%A1%A8/</loc>
+    
+    <lastmod>2021-03-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2020/02/11/npm%E7%9A%84%E5%88%9D%E6%AD%A5%E8%A7%81%E8%A7%A3/</loc>
+    
+    <lastmod>2021-03-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2020/04/17/%E5%85%B3%E4%BA%8Einput%E7%A6%81%E7%94%A8%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
+    
+    <lastmod>2021-03-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2020/05/11/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+    
+    <lastmod>2021-03-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2020/07/01/creat-react-app/</loc>
+    
+    <lastmod>2021-03-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2020/08/11/%E7%AE%80%E8%BF%B0Js%E4%B8%AD%E7%9A%84%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/</loc>
+    
+    <lastmod>2021-03-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2020/09/11/react-hook%E5%AE%9E%E7%8E%B0redux%E7%9A%84%E5%8A%9F%E8%83%BD/</loc>
+    
+    <lastmod>2021-03-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2020/12/11/%E6%B5%85%E6%9E%90Javascript%E4%B8%AD%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE%E5%92%8C%E9%A2%84%E8%A7%A3%E6%9E%90/</loc>
     
     <lastmod>2021-03-15</lastmod>
     
@@ -11,61 +67,26 @@
   <url>
     <loc>http://example.com/2021/03/11/MySQL/</loc>
     
-    <lastmod>2021-03-14</lastmod>
+    <lastmod>2021-03-15</lastmod>
     
   </url>
   
   <url>
     <loc>http://example.com/2021/03/11/%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/</loc>
     
-    <lastmod>2021-03-14</lastmod>
+    <lastmod>2021-03-15</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2020/07/01/creat-react-app/</loc>
+    <loc>http://example.com/2020/05/05/Uniapp%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
     
-    <lastmod>2021-03-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2020/09/11/react-hook%E5%AE%9E%E7%8E%B0redux%E7%9A%84%E5%8A%9F%E8%83%BD/</loc>
-    
-    <lastmod>2021-03-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2020/12/11/%E6%B5%85%E6%9E%90Javascript%E4%B8%AD%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE%E5%92%8C%E9%A2%84%E8%A7%A3%E6%9E%90/</loc>
-    
-    <lastmod>2021-03-12</lastmod>
+    <lastmod>2021-03-15</lastmod>
     
   </url>
   
   <url>
     <loc>http://example.com/2020/10/03/%E5%85%B3%E4%BA%8EJavascript%E7%9A%84%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD%E9%97%AE%E9%A2%98/</loc>
-    
-    <lastmod>2021-03-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2020/04/17/%E5%85%B3%E4%BA%8Einput%E7%A6%81%E7%94%A8%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
-    
-    <lastmod>2021-03-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2020/01/07/AJAX/</loc>
-    
-    <lastmod>2021-03-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2020/08/11/%E7%AE%80%E8%BF%B0Js%E4%B8%AD%E7%9A%84%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/</loc>
     
     <lastmod>2021-03-12</lastmod>
     
@@ -100,13 +121,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/2020/05/11/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
-    
-    <lastmod>2021-03-12</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/2021/03/11/Nuxt/</loc>
     
     <lastmod>2021-03-12</lastmod>
@@ -114,21 +128,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2020/02/11/npm%E7%9A%84%E5%88%9D%E6%AD%A5%E8%A7%81%E8%A7%A3/</loc>
-    
-    <lastmod>2021-03-12</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/2021/03/11/Less/</loc>
-    
-    <lastmod>2021-03-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2020/01/30/JavaScript%E2%80%94%E2%80%94%E9%A1%BA%E5%BA%8F%E8%A1%A8%E3%80%81%E9%93%BE%E8%A1%A8/</loc>
     
     <lastmod>2021-03-12</lastmod>
     
