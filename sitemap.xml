@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2020/09/11/react-hook%E5%AE%9E%E7%8E%B0redux%E7%9A%84%E5%8A%9F%E8%83%BD/</loc>
+    
+    <lastmod>2021-03-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2020/04/13/CSS3/</loc>
     
     <lastmod>2021-03-15</lastmod>
@@ -135,13 +142,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/2020/09/11/react-hook%E5%AE%9E%E7%8E%B0redux%E7%9A%84%E5%8A%9F%E8%83%BD/</loc>
-    
-    <lastmod>2021-03-15</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/2020/08/26/%E6%B5%85%E6%9E%90Javascript%E4%B8%AD%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE%E5%92%8C%E9%A2%84%E8%A7%A3%E6%9E%90/</loc>
     
     <lastmod>2021-03-15</lastmod>
@@ -221,7 +221,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/reactimg/</loc>
+    <loc>http://example.com/tags/react/</loc>
     <lastmod>2021-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
