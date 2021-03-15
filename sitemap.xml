@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2020/05/05/Uniapp%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
+    
+    <lastmod>2021-03-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2021/03/11/MySQL/</loc>
     
     <lastmod>2021-03-14</lastmod>
@@ -24,13 +31,6 @@
   
   <url>
     <loc>http://example.com/2020/09/11/react-hook%E5%AE%9E%E7%8E%B0redux%E7%9A%84%E5%8A%9F%E8%83%BD/</loc>
-    
-    <lastmod>2021-03-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2020/05/05/Uniapp%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
     
     <lastmod>2021-03-12</lastmod>
     
@@ -172,7 +172,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2021-03-14</lastmod>
+    <lastmod>2021-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -180,42 +180,42 @@
   
   <url>
     <loc>http://example.com/tags/AJAX/</loc>
-    <lastmod>2021-03-14</lastmod>
+    <lastmod>2021-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/react/</loc>
-    <lastmod>2021-03-14</lastmod>
+    <lastmod>2021-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Javascript/</loc>
-    <lastmod>2021-03-14</lastmod>
+    <lastmod>2021-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/JavaScript/</loc>
-    <lastmod>2021-03-14</lastmod>
+    <lastmod>2021-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/React/</loc>
-    <lastmod>2021-03-14</lastmod>
+    <lastmod>2021-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Uniapp/</loc>
-    <lastmod>2021-03-14</lastmod>
+    <lastmod>2021-03-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
