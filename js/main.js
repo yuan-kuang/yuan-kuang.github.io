@@ -497,4 +497,227 @@ $(function () {
   /**
  * menu
  * 側邊欄sub-menu 展開/收縮
- * 解決menus在觸摸屏下，滑動屏幕menus_item_child不消失的問題（手機h
+ * 解決menus在觸摸屏下，滑動屏幕menus_item_child不消失的問題（手機hover的bug)
+ */
+  const clickFnOfSubMenu = function () {
+    $('#sidebar-menus .expand').on('click', function () {
+      $(this).parents('.menus_item').find('> .menus_item_child').slideToggle()
+      $(this).toggleClass('hide')
+    })
+
+    $(window).on('touchmove', function (e) {
+      const $menusChild = $('#nav .menus_item_child')
+      if ($menusChild.is(':visible')) {
+        $menusChild.css('display', 'none')
+      }
+    })
+  }
+
+  /**
+ * 複製時加上版權信息
+ */
+  const addCopyright = () => {
+    const copyright = GLOBAL_CONFIG.copyright
+    document.body.oncopy = (e) => {
+      e.preventDefault()
+      let textFont; const copyFont = window.getSelection(0).toString()
+      if (copyFont.length > copyright.limitCount) {
+        textFont = copyFont + '\n' + '\n' + '\n' +
+        copyright.languages.author + '\n' +
+        copyright.languages.link + window.location.href + '\n' +
+        copyright.languages.source + '\n' +
+        copyright.languages.info
+      } else {
+        textFont = copyFont
+      }
+      if (e.clipboardData) {
+        return e.clipboardData.setData('text', textFont)
+      } else {
+        return window.clipboardData.setData('text', textFont)
+      }
+    }
+  }
+
+  /**
+ * 網頁運行時間
+ */
+  const addRuntime = () => {
+    const $runtimeCount = $('#runtimeshow')
+    if ($runtimeCount.length) {
+      const publishDate = $runtimeCount.attr('data-publishDate')
+      $runtimeCount.text(btf.diffDate(publishDate) + ' ' + GLOBAL_CONFIG.runtime)
+    }
+  }
+
+  /**
+ * 最後一次更新時間
+ */
+  const addLastPushDate = () => {
+    const $lastPushDateItem = $('#last-push-date')
+    if ($lastPushDateItem.length) {
+      const lastPushDate = $lastPushDateItem.attr('data-lastPushDate')
+      const diffDay = btf.diffDate(lastPushDate, true)
+      $lastPushDateItem.text(diffDay)
+    }
+  }
+
+  /**
+ * table overflow
+ */
+  const addTableWrap = function () {
+    const $table = $('#article-container table').not($('figure.highlight > table'))
+    $table.each(function () {
+      $(this).wrap('<div class="table-wrap"></div>')
+    })
+  }
+
+  /**
+ * tag-hide
+ */
+  const clickFnOfTagHide = function () {
+    const $hideInline = $('.hide-button')
+    if ($hideInline.length) {
+      $hideInline.on('click', function (e) {
+        const $this = $(this)
+        const $hideContent = $(this).next('.hide-content')
+        $this.toggleClass('open')
+        $hideContent.toggle()
+        if ($this.hasClass('open')) {
+          if ($hideContent.find('.justified-gallery').length > 0) {
+            btf.initJustifiedGallery($hideContent.find('.justified-gallery'))
+          }
+        }
+      })
+    }
+  }
+
+  const tabsFn = {
+    clickFnOfTabs: function () {
+      const $tab = $('#article-container .tabs')
+      $tab.find('.tab > button:not(.tab-to-top)').on('click', function (e) {
+        const $this = $(this)
+        const $tabItem = $this.parent()
+
+        if (!$tabItem.hasClass('active')) {
+          const $tabContent = $this.parents('.nav-tabs').next()
+          $tabItem.siblings('.active').removeClass('active')
+          $tabItem.addClass('active')
+          const tabId = $this.attr('data-href')
+          $tabContent.find('> .tab-item-content').removeClass('active')
+          $tabContent.find(`> ${tabId}`).addClass('active')
+          const $isTabJustifiedGallery = $tabContent.find(tabId).find('.justified-gallery')
+          if ($isTabJustifiedGallery.length > 0) {
+            btf.initJustifiedGallery($isTabJustifiedGallery)
+          }
+        }
+      })
+    },
+    backToTop: () => {
+      const backToTopBtn = $('#article-container .tabs .tab-to-top')
+      backToTopBtn.on('click', function () {
+        btf.scrollToDest($(this).parents('.tabs'))
+      })
+    }
+  }
+
+  const toggleCardCategory = function () {
+    const $cardCategory = $('#aside-cat-list .card-category-list-item.parent i')
+    $cardCategory.on('click', function (e) {
+      e.preventDefault()
+      $(this).toggleClass('expand').parents('.parent').next().slideToggle(300)
+    })
+  }
+
+  const switchComments = function () {
+    let switchDone = false
+    $('#comment-switch > .switch-btn').on('click', function () {
+      const $btn = $(this)
+      $btn.hasClass('move') ? $btn.removeClass('move') : $btn.addClass('move')
+      $('#post-comment > .comment-wrap > div').each(function (i, o) {
+        const $this = $(o)
+        if ($this.is(':visible')) {
+          $this.hide()
+        } else {
+          $this.css({
+            display: 'block',
+            animation: 'tabshow .5s'
+          })
+        }
+      })
+      if (!switchDone && typeof loadOtherComment === 'function') {
+        switchDone = true
+        loadOtherComment()
+      }
+    })
+  }
+
+  const addPostOutdateNotice = function () {
+    const data = GLOBAL_CONFIG.noticeOutdate
+    var diffDay = btf.diffDate(GLOBAL_CONFIG_SITE.postUpdate)
+    if (diffDay >= data.limitDay) {
+      const code = `<div class="post-outdate-notice">${data.messagePrev + ' ' + diffDay + ' ' + data.messageNext}</div>`
+      if (data.position === 'top') {
+        $('#article-container').prepend(code)
+      } else {
+        $('#article-container').append(code)
+      }
+    }
+  }
+
+  const lazyloadImg = () => {
+    window.lazyLoadInstance = new LazyLoad({
+      elements_selector: 'img',
+      threshold: 0,
+      data_src: 'lazy-src'
+    })
+  }
+
+  const relativeDate = function (selector) {
+    selector.each((i, o) => {
+      const $this = $(o)
+      const timeVal = $this.attr('datetime')
+      $this.text(btf.diffDate(timeVal, true)).css('display', 'inline')
+    })
+  }
+
+  const unRefreshFn = function () {
+    $(window).on('resize', function () {
+      adjustMenu()
+    })
+
+    clickFnOfSubMenu()
+    GLOBAL_CONFIG.islazyload && lazyloadImg()
+    GLOBAL_CONFIG.copyright !== undefined && addCopyright()
+  }
+
+  window.refreshFn = function () {
+    initAdjust()
+
+    if (GLOBAL_CONFIG_SITE.isPost) {
+      GLOBAL_CONFIG_SITE.isToc && tocFn()
+      GLOBAL_CONFIG.noticeOutdate !== undefined && addPostOutdateNotice()
+      GLOBAL_CONFIG.relativeDate.post && relativeDate($('#post-meta time'))
+    } else {
+      GLOBAL_CONFIG.relativeDate.homepage && relativeDate($('#recent-posts time'))
+      GLOBAL_CONFIG.runtime && addRuntime()
+      addLastPushDate()
+      toggleCardCategory()
+    }
+
+    sidebarFn()
+    GLOBAL_CONFIG_SITE.isHome && scrollDownInIndex()
+    GLOBAL_CONFIG.highlight && addHighlightTool()
+    GLOBAL_CONFIG.isPhotoFigcaption && addPhotoFigcaption()
+    runJustifiedGallery()
+    GLOBAL_CONFIG.lightbox !== 'null' && addLightBox()
+    scrollFn()
+    addTableWrap()
+    clickFnOfTagHide()
+    tabsFn.clickFnOfTabs()
+    tabsFn.backToTop()
+    switchComments()
+  }
+
+  refreshFn()
+  unRefreshFn()
+})
